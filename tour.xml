@@ -1,0 +1,129 @@
+<krpano version="1.20" debugmode="false" showerrors="false">
+    <!-- xml公用包含文件，設置皮膚，初始化場景，定義公用方法等 --> 
+     
+    <include url="%SWFPATH%/skin/vtourskin.xml?v=051902" />
+    <include url="%SWFPATH%/autorotate.xml" />
+    <include url="%SWFPATH%/object.xml" />
+
+    <include url="%SWFPATH%/shade_sky_floor.xml" />
+     <action name="startup" autorun="onstart">
+         if(startscene === null OR !scene[get(startscene)],
+            copy(startscene,scene[0].name); );
+             if(device.fullscreensupport == true,js(showFullscreenBtn()););
+            if(device.mobile OR device.tablet,js(hideShareAndFootmarkBtn()););
+             loadscene(get(startscene), null, MERGE);
+             set(layer[skin_loadingtext].html,'');	
+            if(startactions !== null, startactions() );
+     </action>
+    <action name="add_video_sources">
+        videointerface_addsource(%1, %2, %3);
+        videointerface_play(%1);
+    </action>
+
+
+        <scene name="scene_fb0e30e9bc60ef1c" title="園遊會13"  onstart="activatespot(90)" thumburl="/resource/works/pano_9c6860cf453f1e86/thumb.jpg" lat="" lng="" heading="">
+        <view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" fovmin="5" fovmax="150" vlookatmin="-90" vlookatmax="90" limitview="lookat"/>
+        <preview url="/resource/works/pano_9c6860cf453f1e86/preview.jpg" />
+                <image>
+            <cube url="/resource/works/pano_9c6860cf453f1e86/pano_%s.jpg" />
+        </image>
+            </scene>
+        <scene name="scene_e2965dbbdf70eb64" title="園遊會12"  onstart="activatespot(90)" thumburl="/resource/works/pano_4a5ae2d0569cc1c8/thumb.jpg" lat="" lng="" heading="">
+        <view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" fovmin="5" fovmax="150" vlookatmin="-90" vlookatmax="90" limitview="lookat"/>
+        <preview url="/resource/works/pano_4a5ae2d0569cc1c8/preview.jpg" />
+                <image>
+            <cube url="/resource/works/pano_4a5ae2d0569cc1c8/pano_%s.jpg" />
+        </image>
+            </scene>
+        <scene name="scene_ddf8f2defa074570" title="園遊會12"  onstart="activatespot(90)" thumburl="/resource/works/pano_0d268ce3a17565e9/thumb.jpg" lat="" lng="" heading="">
+        <view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" fovmin="5" fovmax="150" vlookatmin="-90" vlookatmax="90" limitview="lookat"/>
+        <preview url="/resource/works/pano_0d268ce3a17565e9/preview.jpg" />
+                <image>
+            <cube url="/resource/works/pano_0d268ce3a17565e9/pano_%s.jpg" />
+        </image>
+            </scene>
+        <scene name="scene_ac71cc3b3fe81629" title="園遊會11"  onstart="activatespot(90)" thumburl="/resource/works/pano_d6e28b42270ef386/thumb.jpg" lat="" lng="" heading="">
+        <view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" fovmin="5" fovmax="150" vlookatmin="-90" vlookatmax="90" limitview="lookat"/>
+        <preview url="/resource/works/pano_d6e28b42270ef386/preview.jpg" />
+                <image>
+            <cube url="/resource/works/pano_d6e28b42270ef386/pano_%s.jpg" />
+        </image>
+            </scene>
+        <scene name="scene_cecdaa4415532431" title="園遊會10"  onstart="activatespot(90)" thumburl="/resource/works/pano_aa175256dd27a2af/thumb.jpg" lat="" lng="" heading="">
+        <view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" fovmin="5" fovmax="150" vlookatmin="-90" vlookatmax="90" limitview="lookat"/>
+        <preview url="/resource/works/pano_aa175256dd27a2af/preview.jpg" />
+                <image>
+            <cube url="/resource/works/pano_aa175256dd27a2af/pano_%s.jpg" />
+        </image>
+            </scene>
+        <scene name="scene_675bd6c64da69b83" title="園遊會9"  onstart="activatespot(90)" thumburl="/resource/works/pano_724c32f9eca23b9f/thumb.jpg" lat="" lng="" heading="">
+        <view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" fovmin="5" fovmax="150" vlookatmin="-90" vlookatmax="90" limitview="lookat"/>
+        <preview url="/resource/works/pano_724c32f9eca23b9f/preview.jpg" />
+                <image>
+            <cube url="/resource/works/pano_724c32f9eca23b9f/pano_%s.jpg" />
+        </image>
+            </scene>
+        <scene name="scene_5a16555398663d4b" title="園遊會8"  onstart="activatespot(90)" thumburl="/resource/works/pano_0eeec50fe1abed1d/thumb.jpg" lat="" lng="" heading="">
+        <view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" fovmin="5" fovmax="150" vlookatmin="-90" vlookatmax="90" limitview="lookat"/>
+        <preview url="/resource/works/pano_0eeec50fe1abed1d/preview.jpg" />
+                <image>
+            <cube url="/resource/works/pano_0eeec50fe1abed1d/pano_%s.jpg" />
+        </image>
+            </scene>
+        <scene name="scene_b331512e22a2a941" title="園遊會7"  onstart="activatespot(90)" thumburl="/resource/works/pano_5f8b840e634ec3b9/thumb.jpg" lat="" lng="" heading="">
+        <view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" fovmin="5" fovmax="150" vlookatmin="-90" vlookatmax="90" limitview="lookat"/>
+        <preview url="/resource/works/pano_5f8b840e634ec3b9/preview.jpg" />
+                <image>
+            <cube url="/resource/works/pano_5f8b840e634ec3b9/pano_%s.jpg" />
+        </image>
+            </scene>
+        <scene name="scene_ee77429992c38b28" title="園遊會6"  onstart="activatespot(90)" thumburl="/resource/works/pano_b8aa384f0508acef/thumb.jpg" lat="" lng="" heading="">
+        <view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" fovmin="5" fovmax="150" vlookatmin="-90" vlookatmax="90" limitview="lookat"/>
+        <preview url="/resource/works/pano_b8aa384f0508acef/preview.jpg" />
+                <image>
+            <cube url="/resource/works/pano_b8aa384f0508acef/pano_%s.jpg" />
+        </image>
+            </scene>
+        <scene name="scene_eb683a6341fde2c1" title="園遊會5"  onstart="activatespot(90)" thumburl="/resource/works/pano_2273a8e4a0791d54/thumb.jpg" lat="" lng="" heading="">
+        <view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" fovmin="5" fovmax="150" vlookatmin="-90" vlookatmax="90" limitview="lookat"/>
+        <preview url="/resource/works/pano_2273a8e4a0791d54/preview.jpg" />
+                <image>
+            <cube url="/resource/works/pano_2273a8e4a0791d54/pano_%s.jpg" />
+        </image>
+            </scene>
+        <scene name="scene_e9e8ac3695ff3445" title="園遊會4"  onstart="activatespot(90)" thumburl="/resource/works/pano_7065fe56419f6a3d/thumb.jpg" lat="" lng="" heading="">
+        <view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" fovmin="5" fovmax="150" vlookatmin="-90" vlookatmax="90" limitview="lookat"/>
+        <preview url="/resource/works/pano_7065fe56419f6a3d/preview.jpg" />
+                <image>
+            <cube url="/resource/works/pano_7065fe56419f6a3d/pano_%s.jpg" />
+        </image>
+            </scene>
+        <scene name="scene_5432f362cd9a8746" title="園遊會3"  onstart="activatespot(90)" thumburl="/resource/works/pano_6d97739f0f705161/thumb.jpg" lat="" lng="" heading="">
+        <view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" fovmin="5" fovmax="150" vlookatmin="-90" vlookatmax="90" limitview="lookat"/>
+        <preview url="/resource/works/pano_6d97739f0f705161/preview.jpg" />
+                <image>
+            <cube url="/resource/works/pano_6d97739f0f705161/pano_%s.jpg" />
+        </image>
+            </scene>
+        <scene name="scene_0afd8cc5006dc802" title="小孩"  onstart="activatespot(90)" thumburl="/resource/works/pano_13eba712168ca0ac/thumb.jpg" lat="" lng="" heading="">
+        <view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" fovmin="5" fovmax="150" vlookatmin="-90" vlookatmax="90" limitview="lookat"/>
+        <preview url="/resource/works/pano_13eba712168ca0ac/preview.jpg" />
+                <image>
+            <cube url="/resource/works/pano_13eba712168ca0ac/pano_%s.jpg" />
+        </image>
+            </scene>
+        <scene name="scene_d1c030048096606e" title="園遊會2"  onstart="activatespot(90)" thumburl="/resource/works/pano_8fa10fe8e2731248/thumb.jpg" lat="" lng="" heading="">
+        <view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" fovmin="5" fovmax="150" vlookatmin="-90" vlookatmax="90" limitview="lookat"/>
+        <preview url="/resource/works/pano_8fa10fe8e2731248/preview.jpg" />
+                <image>
+            <cube url="/resource/works/pano_8fa10fe8e2731248/pano_%s.jpg" />
+        </image>
+            </scene>
+        <scene name="scene_c94a87da7f96dace" title="園遊會1"  onstart="activatespot(90)" thumburl="/resource/works/pano_23a34417e72233dc/thumb.jpg" lat="" lng="" heading="">
+        <view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" fovmin="5" fovmax="150" vlookatmin="-90" vlookatmax="90" limitview="lookat"/>
+        <preview url="/resource/works/pano_23a34417e72233dc/preview.jpg" />
+                <image>
+            <cube url="/resource/works/pano_23a34417e72233dc/pano_%s.jpg" />
+        </image>
+            </scene>
+    </krpano>
